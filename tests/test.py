@@ -35,7 +35,7 @@ class TestValidationMethods(unittest.TestCase):
         self.assertRaises(ValueError, validation.validate_miscellaneous_characters, cipher)
     
     def test_validateMiscellaneousCharacters_minusNotBeforeNumber_raisesException(self):
-        ciphers = ["HVS--2","VS-HS-12"]
+        ciphers = ["HVS--2","VS-HS-12","HV-2S8"]
         for c in ciphers:
             with self.subTest():
                 self.assertRaises(ValueError, validation.validate_miscellaneous_characters, c)

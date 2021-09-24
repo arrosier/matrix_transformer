@@ -41,8 +41,8 @@ def validate_miscellaneous_characters(cipher: str) -> None:
         raise ValueError("Negative sign found at the first or last position of the cipher. Please update and try again.")
 
     for index in negative_sign_indices:
-        # A negative sign should only appear immediately before a number.
-        if not cipher[index + 1].isdigit():
+        # A negative sign should only appear immediately before a number and immediately following a SHIFT operator.
+        if not (cipher[index + 1].isdigit() and cipher[index - 1] == constants.SHIFT):
             raise ValueError("Invalid negative sign found in the cipher at position %d. A negative sign should only appear immediately before a number." % index)
 
 def validate_input_string(keyboard_array: np.ndarray, input: str) -> None:

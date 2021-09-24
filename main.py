@@ -14,5 +14,5 @@ INPUT = "DOG"
 
 
 if __name__ == "__main__":
-        enciphered_text = transformer.execute(KEYBOARD_ARRAY, CIPHER, INPUT)
-        print(enciphered_text)
+    enciphered_text = transformer.execute(KEYBOARD_ARRAY, CIPHER, INPUT)
+    print(enciphered_text)
