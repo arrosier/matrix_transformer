@@ -1,0 +1,6 @@
+# Common virtual environment names
+.venv
+venv
+
+# Auto-generated Python files
+__pycache__
