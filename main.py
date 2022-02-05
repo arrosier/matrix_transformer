@@ -1,6 +1,6 @@
 import numpy as np
 
-from homework import transformer
+from matrix_transformer import transformer
 
 
 KEYBOARD_ARRAY = np.array([

@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from homework import transformer, operations, validation
+from matrix_transformer import transformer, operations, validation
 
 
 KEYBOARD_ARRAY = np.array([

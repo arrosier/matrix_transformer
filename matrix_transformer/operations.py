@@ -2,12 +2,12 @@ import numpy as np
 
 
 def horizontal_flip(matrix: np.ndarray) -> np.ndarray:
-    """Reverse the order of elements along axis 0 (left/right)."""
+    """Reverse the order of elements along axis 1 (left/right)."""
 
     return np.fliplr(matrix)
 
 def vertical_flip(matrix: np.ndarray) -> np.ndarray:
-    """Reverse the order of elements along axis 1 (up/down)."""
+    """Reverse the order of elements along axis 0 (up/down)."""
 
     return np.flipud(matrix)
 
